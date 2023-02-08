@@ -10,6 +10,9 @@ dotenv.config();
 // Initializing app
 const app = express();
 
+// Setting view engine (ejs)
+app.set('view engine', 'ejs');
+
 // Routes middleware
 app.use("/", generalRoutes);
 
