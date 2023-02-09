@@ -1,15 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Refer Book</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="styles/main.css">
+<title>Refer Book</title>
 </head>
 
-<body>
-    <h1>Welcome to <%= appName %></h1>
+<body class="main bg-black flex">
+ 
+
+    <!-- 
+    <div class="main w-full h-screen bg-green-500 flex"> -->
+    <!-- accessbar -->
+    <div class="accessbar min-h-full w-24 bg-green-400  flex flex-col gap-6 item-center pt-40 shadow-2xl ">
+
+        <div class="icon1 pl-3 ">icon1</div>
+        <div class="icon2 pl-3 ">icon2</div>
+        <div class="icon3 pl-3 ">icon3</div>
+    </div>
+
+    <!-- header  -->
+    <div class="container w-full  bg-white flex flex-col">
+        <div class="header grid grid-cols-3 bg-white ">
+            <div class="subjects flex gap-2 pt-6 ml-20  ">
+                <button class="cbse bg-black w-fit rounded-2xl p-1  mt-2 text-slate-50">CBSE</button>
+                <button class="polytechnic bg-black w-fit h-fit rounded-xl p-1  mt-2 text-slate-50">Polytechnic</button>
+                <button class="bTech bg-black w-fit rounded-2xl p-1 mt-2 text-slate-50 ">B.Tech</button>
+            </div>
+            <div class="heading pt-8">
+                <h1></h1>Welcome to <%= appName %>
+            </div>
+            <div class="account grid grid-cols-2">
+
+                <button class="upload bg-yellow-500 text-black mt-3 w-40 rounded-2xl transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 hover:bg-yellow-300 duration-300 "> ->UPLOAD</button>
+                <div class="user flex justify-end items-center pr-20"> user </div>
+            </div>
+        </div>
+
+        <!-- description  -->
+        <div class="description bg-white w-full h-full flex flex-col">
+            <h1 class="intro w-full mt-24 ml-10 ">Get all your notes here </h1>
+            <p>No writing boring notes and missing dictations anymore</p>
+
+            <!-- facilities  -->
+
+            <div class="facilities flex flex-row gap-36 h-full pt-44  justify-center ">
+                <div class="fist bg-yellow-500  h-36 w-72 rounded-lg  shadow-sm">Get college or school notes on major subjects
+                </div>
+                <div class="second bg-yellow-400  h-36 w-72 rounded-lg shadow-sm">Free for all </div>
+                <div class="Third bg-green-300 h-36 w-72 rounded-lg shadow-sm ">Teachers?upload notes for students </div>
+               
+
+            </div>
+ <!-- uploads and topics  -->
+
+            <div class="recentuploads h-full w-full flex flex-row justify-center gap-72 mt-36">
+                <div class="uploads flex flex-col  justify-center items-center mb-28 gap-11">
+                    <div class="data1  bg-white h-40 w-96 rounded-2xl  shadow-md">Trees in data structure </div>
+                    <div class="data2 bg-white h-40 w-96 rounded-2xl shadow-md  ">Algorithms </div>
+                    <div class="data3 bg-white h-40 w-96  rounded-2xl  shadow-md">JavaScript </div>
+                </div>
+                <div class="topics flex flex-col justify-center gap-5 mb-52 mr-36">
+                    <div class="topic1 h-32 w-72 bg-white rounded-xl  shadow-xl">Math</div>
+                    <div class="topic2 h-32 w-72 bg-white rounded-xl  shadow-xl">Computer Programming</div>
+                    <div class="topic3 h-32 w-72 bg-white rounded-xl  shadow-xl ">Communication</div>
+                    
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+    </div>
+
+
+
 </body>
 
 </html>
