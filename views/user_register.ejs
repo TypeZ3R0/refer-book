@@ -5,12 +5,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" href="styles/main.css" />
-        <link rel="stylesheet" href="styles/register.css" />
+        <link rel="stylesheet" href="styles/register.css">
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Refer Book</title>
     </head>
 
-    <body>
+    <body class="flex">
+        <div class="logo w-28 h-9 ml-6 mt-4 bg-[#bada55] flex items-center justify-center rounded-lg ">
+            Refer-Book
+        </div>
         <main class="flex w-full h-screen justify-center items-center">
             <div class="main block p-6 rounded-xl shadow-2xl shadow-black w-80 h-96">
                 <h1 class="heading text-3xl font-semibold my-4 flex items-center justify-center">
@@ -20,7 +24,7 @@
                     <input
                         type="text"
                         placeholder="Full-Name"
-                        class="my-4 ml-5 h-9 outline-yellow-600"
+                        class="my-4 ml-5 h-9 outline-gray-400 pl-1"
                         required
                     />
 
@@ -29,25 +33,32 @@
                     <input
                         type="text  "
                         placeholder="G-mail"
-                        class="ml-5 h-9 my-4 outline-yellow-400"
+                        class="ml-5 h-9 my-4 outline-gray-400 pl-1"
                         required
                     />
                     <br />
 
                     <input
                         type="password"
-                        class="ml-5 h-9 my-4 outline-green-300"
+                        class="pass ml-5 h-9 my-4 outline-gray-400 pl-1 font-vardana"
                         placeholder="Password"
+
                     />
+                <span toggle = "password-field" class=""></span>
+
                     <br />
                     <button
-                        class="button flex items-center justify-center bg-gradient-to-r from-yellow-600 via-yellow-400 to-green-300 mt-5 ml-10 pl-1 w-36 h-9 rounded-lg py-4 hover:bg-blue-500 focus:ring text-white font-medium"
-                        required
+                        class="button flex items-center justify-center bg-green-500 mt-5 ml-10 pl-1 w-36 h-9 rounded-lg text-white font-medium transition ease-in-out delay-50 hover:scale-110  duration-300"
                     >
                         REGISTER
                     </button>
                 </form>
             </div>
         </main>
+        <div class="button">
+            <button class="sign-in text-sm h-10 w-40 bg-blue-600 text-white mr-3 mt-3 rounded-lg hover:bg-blue-400">
+                Already user ? sign in
+            </button>
+        </div>
     </body>
 </html>
