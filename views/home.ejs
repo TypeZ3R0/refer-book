@@ -9,86 +9,119 @@
         <title>Refer Book</title>
     </head>
 
-    <body class="main bg-black flex">
-        <!-- 
-    <div class="main w-full h-screen bg-green-500 flex"> -->
-        <!-- accessbar -->
-        <div
-            class="accessbar min-h-full w-24 bg-green-400 flex flex-col gap-6 item-center pt-40 shadow-2xl"
-        >
-            <div class="icon1 pl-3">icon1</div>
-            <div class="icon2 pl-3">icon2</div>
-            <div class="icon3 pl-3">icon3</div>
-        </div>
+    <body class="main flex  w-full">
+ <!-- accessbar -->
 
-        <!-- header  -->
-        <div class="container w-full bg-white flex flex-col">
-            <div class="header grid grid-cols-3 bg-white">
-                <div class="subjects flex gap-2 pt-6 ml-20">
-                    <button class="cbse bg-black w-fit rounded-2xl p-1 mt-2 text-slate-50">
-                        CBSE
-                    </button>
-                    <button
-                        class="polytechnic bg-black w-fit h-fit rounded-xl p-1 mt-2 text-slate-50"
-                    >
-                        Polytechnic
-                    </button>
-                    <button class="bTech bg-black w-fit rounded-2xl p-1 mt-2 text-slate-50">
-                        B.Tech
-                    </button>
+    <div class="accesbar h-[270vh] w-[100px] bg-white sticky grid grid-rows-[20vh,80px,80px,80px,1fr] justify-center shadow-md shadow-gray-600">
+        <div class="empty"></div>
+        <div class="logo1">logo1</div> 
+        <div class="logo2">logo2</div>
+        <div class="logo3">logo3</div>
+        <div class="empty2"></div>
+    
+    </div> 
+
+            <div class="1st-row-section h-full w-full grid grid-rows-[8%,30%,20%,auto] ">
+   <!-- header  --> 
+                <div class="header  grid justify-center items-center grid-cols-[70%,30%] mt-3">
+                    <div class="name text-black h-14  w-auto flex items-center pl-5"> referbook.io</div>
+                    <div class="identity h-14  w-auto grid grid-cols-2">
+                        <div class="upload flex items-center justify-center bg-[#FFB72B] text-black w-36 ml-5 rounded-2xl transition ease-in-out delay-50  hover:scale-110 hover:bg-[#FFE61B] duration-300 cursor-pointer "
+                        >->UPLOAD</div>
+                        <div class="user-logo flex items-center justify-center">User Bruh</div>
+                    </div>
                 </div>
-                <div class="heading pt-8">
-                    <h1>Welcome to <%= appName %></h1>
+
+
+
+<!-- description  -->
+
+
+                <div class="description grid grid-cols-[60%,40%] mt-8 h-[200px] ml-8">
+                    <div class="1st-bold ">
+                        <div class="des1 text-[35px]">Get your asses here so we can put some brain into you </div>
+                        <div class="des2 pl-6">The world is cruel , so write your own notes ugly ass bitches .
+                            Internet ruined everything for you and all you want is to get ruined more 
+                        and more  </div>
+                    </div>
+                    <div class="2nd-for-pic"></div>
+                    </div>
+
+ 
+<!-- facilities  -->
+
+                <div class="facilities grid grid-cols-3  mt-6 justify-center">
+                    <div class="box1 bg-[#FFB72B]  h-[180px] flex items-center justify-start w-[360px] ml-20  rounded-xl pl-1 shadow-md shadow-gray-500">
+                        Get college and school notes on major subject 
                 </div>
-                <div class="account grid grid-cols-2">
-                    <button
-                        class="upload bg-yellow-500 text-black mt-3 w-40 rounded-2xl transition ease-in-out delay-50  hover:scale-110 hover:bg-yellow-300 duration-300"
-                    >
-                        ->UPLOAD
-                    </button>
-                    <div class="user flex justify-end items-center pr-20">user</div>
-                </div>
+                <div class="box2 bg-[#FFE61B] h-[180px]  flex items-center justify-center  w-[360px] ml-10 rounded-xl shadow-md shadow-gray-500">Free for all</div>
+                <div class="box3 bg-[#B5FE83] h-[180px] flex items-center justify-end  w-[360px] rounded-xl pr-1  shadow-md shadow-gray-500">Teacher ? upload notes for your students </div>
             </div>
 
-            <!-- description  -->
-            <div class="description bg-white w-full h-full flex flex-col">
-                <h1 class="intro w-full mt-24 ml-10">Get all your notes here</h1>
-                <p>No writing boring notes and missing dictations anymore</p>
 
-                <!-- facilities  -->
 
-                <div class="facilities flex flex-row gap-36 h-full pt-44 justify-center">
-                    <div class="fist bg-yellow-500 h-36 w-72 rounded-lg shadow-sm">
-                        Get college or school notes on major subjects
+<!-- uploads  -->
+ 
+
+                <div class="uploads grid grid-cols-[60%,40%] h-[115vh]  ">
+                    
+                    <div class="left-side mt-11  grid grid-rows-[80px,1fr,1fr,1fr] gap-16  ">
+
+                    <div class="recent-uploads  grid-rows-2 ">
+                       <div class="des pl-2 text-[20px]"> Recent Uploads : </div>
+                       <div class="extra grid grid-cols-[45%,55%]">
+                       <div class="up-topics grid grid-cols-3 pt-2 pl-2 ">
+                        <button class="enginnering bg-black rounded-[10px] text-white w-fit h-fit px-2 py-1 hover:bg-[#696969]">Enginnering</button>
+                        <button class="polytechnic bg-black rounded-[10px] text-white w-fit h-fit px-2 py-1 hover:bg-[#696969] ">Polytechnic</button>
+                        <button class="computer bg-black rounded-[10px] text-white w-fit h-fit px-2 py-1  hover:bg-[#696969]">Computer</button>
+                       </div>
+                       <div class="extra">
+                         
+                       </div>
+                    </div> 
+
                     </div>
-                    <div class="second bg-yellow-400 h-36 w-72 rounded-lg shadow-sm">
-                        Free for all
+
+
+                    <!-- upload area  -->
+
+                    <div class="upload-1 bg-white h-[240px]  w-[600px] ml-[20vh] rounded-[30px] shadow-lg shadow-gray-600 grid grid-cols-[65%,35%] grid-rows-2 ">
+                        Trees in Data Structure 
                     </div>
-                    <div class="Third bg-green-300 h-36 w-72 rounded-lg shadow-sm">
-                        Teachers?upload notes for students
+                    <div class="upload-2 bg-white h-[240px] w-[600px]  ml-[20vh] rounded-[30px] shadow-lg shadow-gray-600"></div>
+                    <div class="upload-3 bg-white  h-[240px]  w-[600px] ml-[20vh] rounded-[30px] shadow-lg shadow-gray-600"></div> 
+                
                     </div>
+                    <div class="right-side mt-11 bg-white grid  grid-rows-[40px,1fr,1fr,1fr,1fr] gap-5 h-[700px]">
+                        <div class="tag-subjects">Subjects by tag :</div>
+                        <div class="tag-1 w-[400px] h-[85px] shadow-sm shadow-gray-500 grid justify-center items-center">Data Structure </div>
+                        <div class="tag-2 w-[400px] h-[85px] shadow-sm shadow-gray-500 grid justify-center items-center">Algorithm</div>
+                        <div class="tag-3 w-[400px] h-[85px] shadow-sm shadow-gray-500 grid justify-center items-center">AL & ML Python </div>
+                        <div class="tag-4 w-[400px] h-[85px] shadow-sm shadow-gray-500 grid justify-center items-center">Programming</div>
+                        <div class="tag-5 w-[400px] h-[85px] shadow-sm shadow-gray-500 grid justify-center items-center">Game Development</div>
+                        </div>
+
+                    </div>
+
                 </div>
-                <!-- uploads and topics  -->
-
-                <div class="recentuploads h-full w-full flex flex-row justify-center gap-72 mt-36">
-                    <div class="uploads flex flex-col justify-center items-center mb-28 gap-11">
-                        <div class="data1 bg-white h-40 w-96 rounded-2xl shadow-md">
-                            Trees in data structure
-                        </div>
-                        <div class="data2 bg-white h-40 w-96 rounded-2xl shadow-md">Algorithms</div>
-                        <div class="data3 bg-white h-40 w-96 rounded-2xl shadow-md">JavaScript</div>
-                    </div>
-                    <div class="topics flex flex-col justify-center gap-5 mb-52 mr-36">
-                        <div class="topic1 h-32 w-72 bg-white rounded-xl shadow-xl">Math</div>
-                        <div class="topic2 h-32 w-72 bg-white rounded-xl shadow-xl">
-                            Computer Programming
-                        </div>
-                        <div class="topic3 h-32 w-72 bg-white rounded-xl shadow-xl">
-                            Communication
-                        </div>
-                    </div>
+  
                 </div>
-            </div>
+                
+            
         </div>
+    
     </body>
 </html>
+
+
+
+
+
+<!-- 
+
+
+<button
+class="upload bg-yellow-500 text-black mt-3 w-40 rounded-2xl transition ease-in-out delay-50  hover:scale-110 hover:bg-yellow-300 duration-300"
+>
+->UPLOAD
+</button> -->
