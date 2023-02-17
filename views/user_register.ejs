@@ -1,53 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="stylesheet" href="styles/main.css" />
-        <link rel="stylesheet" href="styles/register.css" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Refer Book</title>
-    </head>
 
-    <body>
-        <main class="flex w-full h-screen justify-center items-center">
-            <div class="main block p-6 rounded-xl shadow-2xl shadow-black w-80 h-96">
-                <h1 class="heading text-3xl font-semibold my-4 flex items-center justify-center">
-                    User Register
-                </h1>
-                <form action="" method="POST" class="form ml-7">
-                    <input
-                        type="text"
-                        placeholder="Full-Name"
-                        class="my-4 ml-5 h-9 outline-yellow-600"
-                        required
-                    />
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/register.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Refer Book</title>
+</head>
 
-                    <br />
+<body>
+    <main class="flex w-full h-screen justify-center items-center">
+        <div class="main block p-6 rounded-xl shadow-2xl shadow-black w-80 h-96">
+            <h1 class="heading text-3xl font-semibold my-4 flex items-center justify-center">
+                User Register
+            </h1>
+            <form action="" method="POST" class="form ml-7">
+                <input type="text" placeholder="Full-Name" name="fullName" class="my-4 ml-5 h-9 outline-yellow-600"
+                    required />
 
-                    <input
-                        type="text  "
-                        placeholder="G-mail"
-                        class="ml-5 h-9 my-4 outline-yellow-400"
-                        required
-                    />
-                    <br />
+                <br />
 
-                    <input
-                        type="password"
-                        class="ml-5 h-9 my-4 outline-green-300"
-                        placeholder="Password"
-                    />
-                    <br />
-                    <button
-                        class="button flex items-center justify-center bg-gradient-to-r from-yellow-600 via-yellow-400 to-green-300 mt-5 ml-10 pl-1 w-36 h-9 rounded-lg py-4 hover:bg-blue-500 focus:ring text-white font-medium"
-                        required
-                    >
-                        REGISTER
-                    </button>
-                </form>
-            </div>
-        </main>
-    </body>
+                <input type="text  " placeholder="Email" name="email" class="ml-5 h-9 my-4 outline-yellow-400"
+                    required />
+                <br />
+
+                <input type="password" class="ml-5 h-9 my-4 outline-green-300" placeholder="Password" name="password"
+                    required />
+                <br />
+                <%= registerErr %>
+                <button
+                    class="button flex items-center justify-center bg-gradient-to-r from-yellow-600 via-yellow-400 to-green-300 mt-5 ml-10 pl-1 w-36 h-9 rounded-lg py-4 hover:bg-blue-500 focus:ring text-white font-medium"
+                    required>
+                    REGISTER
+                </button>
+            </form>
+        </div>
+    </main>
+</body>
+
 </html>
