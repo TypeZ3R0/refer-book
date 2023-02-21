@@ -6,6 +6,7 @@ import dotenv from "dotenv";
 import generalRoutes from "./routes/general_routes.js";
 import userRoutes from "./routes/user_routes.js";
 
+
 dotenv.config();
 
 // Initializing app
@@ -17,6 +18,7 @@ app.set("view engine", "ejs");
 // Routes middleware
 app.use("/", generalRoutes);
 app.use("/accounts", userRoutes);
+
 
 // Listening to PORT
 const PORT = process.env.PORT || 8000;
