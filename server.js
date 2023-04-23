@@ -1,17 +1,20 @@
-// Importing npm packages
+// Importing dependencies
 import express from "express";
+import session from "express-session";
+import passport from "passport";
 import dotenv from "dotenv";
-import mongoose from "mongoose";
+dotenv.config();
 
 // Importing local modules
 import { connectDatabase } from "./database/db.js";
 import generalRoutes from "./routes/general_routes.js";
 import userRoutes from "./routes/user_routes.js";
+import { sessionConfiguration, useLocalStrategy } from "./auth/auth.js";
 
-dotenv.config();
 
 // Initializing app
 const app = express();
+app.use(session(sessionConfiguration));
 
 // Connecting to database
 await connectDatabase();
@@ -19,6 +22,9 @@ await connectDatabase();
 // Middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(passport.initialize());
+app.use(passport.session());
+useLocalStrategy();
 
 // Setting view engine (ejs)
 app.set("view engine", "ejs");

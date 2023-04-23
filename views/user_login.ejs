@@ -19,26 +19,22 @@
     <main class="flex w-full h-screen justify-center items-center">
         <div class="main block p-6 rounded-xl shadow-2xl shadow-black w-80 h-[64]">
             <h1 class="heading text-3xl font-semibold my-4 flex items-center justify-center">
-                User Register
+                User Login
             </h1>
-            <form action="/accounts/register" method="POST" class="form ml-7">
-                <input type="text" placeholder="First name" name="firstName" class="my-4 ml-5 h-9 outline-gray-400 pl-1"
-                    required />
-                <input type="text" placeholder="Last name" name="lastName" class="my-4 ml-5 h-9 outline-yellow-600"
-                    required />
-
+            <form action="/accounts/login" method="POST" class="form ml-7">
+                <% if (errMessage.length !== 0) { %>
+                   <p><%= errMessage %></p>
+                <% } %>
                 <input type="email" placeholder="Email" name="email" class="ml-5 h-9 my-4 outline-gray-400 pl-1"
                     required />
                 <br />
-
                 <input type="password" name="password" class="pass ml-5 h-9 my-4 outline-gray-400 pl-1 font-vardana"
                     placeholder="Password" />
                 <span toggle="password-field" class=""></span>
-
                 <br />
                 <button type="submit"
                     class="button flex items-center justify-center bg-green-500 mt-3 ml-10 pl-1 w-36 h-9 rounded-lg text-white font-medium transition ease-in-out delay-50 hover:scale-110  duration-300">
-                    REGISTER
+                    LOGIN
                 </button>
             </form>
         </div>
