@@ -11,7 +11,6 @@ import generalRoutes from "./routes/general_routes.js";
 import userRoutes from "./routes/user_routes.js";
 import { sessionConfiguration, useLocalStrategy } from "./auth/auth.js";
 
-
 // Initializing app
 const app = express();
 app.use(session(sessionConfiguration));
@@ -32,6 +31,7 @@ app.set("view engine", "ejs");
 // Routes middleware
 app.use("/", generalRoutes);
 app.use("/accounts", userRoutes);
+
 
 // Listening to PORT
 const PORT = process.env.PORT || 8000;
